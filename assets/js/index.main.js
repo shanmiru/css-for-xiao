@@ -6,6 +6,18 @@ $(document).ready(function() {
   }
 })
 
+        document.getElementById("cards").value = getSavedValue("cards");
+        function saveValue(e){
+            var id = e.id;
+            var val = e.value;
+            localStorage.setItem(id, val);
+        }
+        function getSavedValue  (v){
+            if (!localStorage.getItem(v)) {
+                return "";
+            }
+            return localStorage.getItem(v);
+        }
     $('.show-live-cvv').click(function() {
       var type = $('.show-live-cvv').attr('type');
       $('#live-cvv').slideToggle();
