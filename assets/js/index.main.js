@@ -121,7 +121,7 @@ document.getElementById("time").innerHTML = "Fired up!🔥";
     var total = raw.length; 
     
     $('.form-checker').val(txt.trim());
-    if(total > 6000){
+    if(total > 60000){
         Toast.fire({
             icon: 'error', title: '<h6 class="title mb-2">List Limit Exceeded.</h6>',background: '#27293d'
         });
