@@ -4,6 +4,10 @@ function ccgen() {
         darkside(document.console.ccp.value, document.console.tr.value);
         showSave();
     });
+  var ccp = $('#ccpN').val();
+  if(ccp == '') {
+    var out = "How can we proceed to generate if the BIN is missing? Lmao.":
+  }
     $("#ccpN").bind("change", function() {
         fillter();
     });
