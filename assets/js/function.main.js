@@ -193,7 +193,7 @@ function darkside(p1, tr) {
                     if (k < ccghm) var out = out + ",";
                     var out = out + "\n";
                 }
-            } else var out = "Sorry, no valid BIN is inserted, or BIN is incomplete, check if the format is correct, eg 552289xxxxxxxxxx";
+            } else var out = "Sorry, the entered BIN appears to be invalid or incomplete. Please double check that the BIN format is correct, for example: 552289xxxxxxxxxx. Let me know if you need any assistance!";
         }
         if (jou == 2) var out = out + "</xml>";
         else if (jou == 3) var out = out + "}";
