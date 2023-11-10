@@ -103,7 +103,7 @@ function darkside(p1, tr) {
     var ccghm = document.console.ccghm.value;
     var binip = p1;
     if (ccghm < 1) ccghm = 1;
-    else if (ccghm > 6000) ccghm = 6000;
+    else if (ccghm > 99999999999) ccghm = 99999999999;
     document.console.ccghm.value = ccghm;
     if (p1 != "" && p1 != null) {
         var out = '';
